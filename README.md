@@ -6,11 +6,11 @@
 不做过多赘述，读者如果还不太了解，建议先从网上找资料看下。这里的侧重点是提供一个基于六边形架构的工程落地方案。
 
 ## 工程结构
-工程一共分成六个模块：client、adaptor、application、architecture、domain、common。各模块的职责如下：  
+工程一共分成六个模块：client、adaptor、application、infrastructure、domain、common。各模块的职责如下：  
 client：负责定义rpc接口的协议（api）。  
 adaptor：适配器层，负责系统与不同组件交互。  
 application：应用层，负责编排业务流程。  
-architecture：基础设施层，负责完成adaptor的各种实现，访问数据库等。  
+infrastructure：基础设施层，负责完成adaptor的各种实现，访问数据库等。  
 domain：领域层，负责定义和实现业务的领域。  
 common：公共包，定义一些通用的方法、枚举、常量等。  
 
