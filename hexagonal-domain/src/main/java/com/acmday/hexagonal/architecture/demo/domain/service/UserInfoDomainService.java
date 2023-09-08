@@ -2,6 +2,7 @@ package com.acmday.hexagonal.architecture.demo.domain.service;
 
 import com.acmday.hexagonal.architecture.demo.adaptor.driven.domain.command.UserInfoCommand;
 import com.acmday.hexagonal.architecture.demo.adaptor.driven.repository.IUserInfoRepository;
+import com.acmday.hexagonal.architecture.demo.domain.aggregation.UserInfoAggregation;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -18,7 +19,7 @@ public class UserInfoDomainService {
     @Resource
     private IUserInfoRepository userInfoRepository;
 
-    public Boolean insertUserInfo(UserInfoCommand command) {
+    public Boolean insertUserInfo(UserInfoAggregation userInfoAggregation) {
         return null;
     }
 }

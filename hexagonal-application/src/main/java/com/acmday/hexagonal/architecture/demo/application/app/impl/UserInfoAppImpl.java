@@ -1,9 +1,9 @@
 package com.acmday.hexagonal.architecture.demo.application.app.impl;
 
 import com.acmday.hexagonal.architecture.demo.adaptor.driven.application.IUserInfoApp;
+import com.acmday.hexagonal.architecture.demo.adaptor.driven.application.query.UserInfoQuery;
 import com.acmday.hexagonal.architecture.demo.adaptor.driven.domain.IUserInfoServiceCommand;
 import com.acmday.hexagonal.architecture.demo.adaptor.driven.domain.IUserInfoServiceQuery;
-import com.acmday.hexagonal.architecture.demo.adaptor.driven.domain.command.UserInfoCommand;
 import com.acmday.hexagonal.architecture.demo.adaptor.driven.gateway.IAddressInfoGateway;
 import com.acmday.hexagonal.architecture.demo.adaptor.driven.producer.IUserInfoProducer;
 import com.acmday.hexagonal.architecture.demo.adaptor.driven.repository.IUserInfoRepository;
@@ -35,7 +35,7 @@ public class UserInfoAppImpl implements IUserInfoApp {
 
 
     @Override
-    public Boolean insertUserInfo(UserInfoCommand command) {
+    public Integer countUserByCondition(UserInfoQuery query) {
 
         return null;
     }

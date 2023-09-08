@@ -1,6 +1,6 @@
 package com.acmday.hexagonal.architecture.demo.adaptor.driven.application;
 
-import com.acmday.hexagonal.architecture.demo.adaptor.driven.domain.command.UserInfoCommand;
+import com.acmday.hexagonal.architecture.demo.adaptor.driven.application.query.UserInfoQuery;
 
 /**
  * @author acmday
@@ -8,5 +8,11 @@ import com.acmday.hexagonal.architecture.demo.adaptor.driven.domain.command.User
  */
 public interface IUserInfoApp {
 
-    Boolean insertUserInfo(UserInfoCommand command);
+    /**
+     * 统计数量
+     *
+     * @param query
+     * @return
+     */
+    Integer countUserByCondition(UserInfoQuery query);
 }
