@@ -1,7 +1,6 @@
 package com.acmday.hexagonal.architecture.demo.adaptor.driven.application;
 
-import com.acmday.hexagonal.architecture.demo.adaptor.driven.application.dto.UserInfoDTO;
-import com.acmday.hexagonal.architecture.demo.adaptor.driven.application.query.UserInfoQuery;
+import com.acmday.hexagonal.architecture.demo.adaptor.driven.domain.command.UserInfoCommand;
 
 /**
  * @author acmday
@@ -9,19 +8,5 @@ import com.acmday.hexagonal.architecture.demo.adaptor.driven.application.query.U
  */
 public interface IUserInfoApp {
 
-    /**
-     * 查询用户信息
-     *
-     * @param query
-     * @return
-     */
-    UserInfoDTO queryUserInfoByQuery(UserInfoQuery query);
-
-    /**
-     * 获取用户姓名
-     *
-     * @param query
-     * @return
-     */
-    String queryUserNameByQuery(UserInfoQuery query);
+    Boolean insertUserInfo(UserInfoCommand command);
 }
